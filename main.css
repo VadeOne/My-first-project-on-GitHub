@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;   
+    background: url('/img/background.jpg') no-repeat center top;
+    background-size: cover;
+    margin: 0;
+    padding: 0; 
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;    
+    padding: 0 50px;   
+    box-sizing: border-box;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header.container {
+    background: #000; 
+    padding: 20px 0; 
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .Vadim {
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 800;
+    background: none; 
+    padding: 0;       
+    border-radius: 0; 
+    display: inline-block;
+    color: #fff; 
+    text-shadow: 0 0 5px #fff;   
+    margin-left: 175px;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    gap: 40px; 
+    margin-right: 175px; 
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 70px;
+    padding: 30px; 
+    margin-top: 120px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+}
+.hero--info h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 170%;
+    margin: 30px 0;
+
+}
+
+.hero img {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 700px;  
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 
+}
+
+/* О себе */
+.about {
+    background: rgba(0, 0, 0, 0.85); 
+    padding: 60px 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.about h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about .motto {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    color: #ffd700; 
+}
+
+/* Секция про ник и банер */
+.big-test {
+    padding: 50px 0;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.banner {
+    background: #000;      
+    padding: 80px 50px;       
+    border-radius: 20px;    
+    margin-top: 20px;         
+    box-sizing: border-box;  
+    text-align: center;
+}
+
+.banner h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.banner p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 170%;
+    margin: 30px 0;
+    color: #fff;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+/* Cекция с игрульками */
+.trending {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 80px 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-sizing: border-box;  
+    text-align: center;
+}
+
+.trending h3 {
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.trending p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 170%;
+    margin: 30px 0;
+    color: #fff;
+}
+
+.trending .games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.trending .games span img {
+    position: relative;
+    top: 0px;
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain; 
+    vertical-align: middle; 
+    margin-right: 7px;
+}
+
+.trending .games .block img {
+    width: 300px; 
+    height: 400px;      
+    object-fit: cover;  
+    border-radius: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.trending .games .block img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
+}
+
+/* Cекция с фильмами и мульт */
+
+.ProMove {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 80px 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;  
+    text-align: center;
+}
+
+.ProMove h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ProMove p {
+    margin: 20px 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ProMove .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.ProMove .images img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;  
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProMove .images img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Контакты */
+.contacts {
+    background: rgba(0, 0, 0, 0.85); 
+    padding: 60px 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contacts h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contacts p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contacts-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    flex-wrap: wrap; 
+}
+
+.contacts-icons a img {
+    width: 60px;  
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+    background: #fff; 
+    padding: 10px;
+}
+
+.contacts-icons a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #ffd700; 
+}
+
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .blocks h4 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    color: #ccc;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer>p {
+    text-align: center;
+}
+
+footer .blocks a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+footer .blocks a:hover {
+    color: #fff;
+}
+
+/* доп прокрутка плавная */
+html {
+    scroll-behavior: smooth;
+}
