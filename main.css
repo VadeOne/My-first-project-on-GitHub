@@ -1,0 +1,267 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: auto; 
+    gap: 30px;
+    background: url('/img/background.jpg') center/cover no-repeat fixed;
+    padding: 20px;
+    font-family: "Zalando Sans", sans-serif;
+    color: #fff;
+}
+
+/* Header */
+header.header {
+    grid-column: 2 / 20;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.85);
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+header .Vadim {
+    font-size: 55px;
+    font-weight: 800;
+    text-shadow: 0 0 5px #fff;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+header nav ul li a {
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Hero */
+.hero {
+    grid-column: 2 / 20;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-top: 10px;
+}
+.hero--info {
+    grid-column: 2 / 5;
+    background: rgba(0,0,0,0.7);
+    padding: 30px;
+    border-radius: 20px;
+    color: #fff;
+    margin-right: 30px;
+}
+.hero--info h2 { 
+    font-size: 35px; 
+    margin-bottom: 15px; 
+}
+.hero--info h1 { 
+    font-size: 45px; 
+    margin-bottom: 20px;
+}
+.hero--info p { 
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+.hero-img {
+    grid-column: 11 / 20;
+    max-width: 40%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    object-fit: cover;
+}
+
+/* Интересы */
+.about {
+    grid-column: 2 / 20;
+    grid-row: 3 / 4;
+    background: rgba(0,0,0,0.85);
+    padding: 50px;
+    border-radius: 20px;
+}
+.about h3 { 
+    font-size: 35px; 
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+.about p { 
+    font-size: 20px; 
+    margin-bottom: 20px; 
+}
+.about .motto { 
+    text-align: center; 
+    color: #ffd700; 
+    font-weight: 700; 
+}
+
+/* Баннер */
+.banner {
+    grid-column: 2 / 20;
+    grid-row: 4 / 5;
+    background: rgba(0,0,0,0.85);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+.banner h3 { 
+    font-size: 35px; 
+    margin-bottom: 20px; 
+}
+.banner p { 
+    font-size: 20px; 
+    margin-bottom: 30px; 
+}
+
+.banner img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 15px;
+}
+
+/* Любимые игры */
+.trending {
+    grid-column: 2 / 20;
+    grid-row: 5 / 6;
+    background: rgba(0,0,0,0.7);
+    padding: 50px;
+    border-radius: 20px;
+}
+.trending h3 { 
+    text-align: center; 
+    font-size: 31px; 
+    margin-bottom: 20px; 
+}
+.trending p {
+    font-size: 22px; 
+    line-height: 1.8; 
+}
+.trending .games {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* автоматически распределяем блоки */
+    gap: 20px;
+}
+.trending .games .block {
+    display: grid;
+    grid-template-rows: auto auto; 
+    justify-items: center;        
+    text-align: center;       
+    gap: 10px;  
+}
+.trending .games .block img { 
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    transition: 0.3s; 
+}
+.trending .games .block span img {
+    width: 35px;
+    height: 35px; 
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+.trending .games .block img:hover { 
+    transform: scale(1.05);
+}
+
+/* Фильмы и мультфильмы */
+.ProMove {
+    grid-column: 2 / 20;
+    grid-row: 6 / 7;
+    background: rgba(0,0,0,0.7);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+.ProMove h3 {
+    font-size: 30px; 
+}
+.ProMove p {
+    font-size: 22px; 
+    line-height: 1.8; 
+}
+.ProMove .images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.ProMove .images img { 
+    width: 400px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    transition: 0.3s; 
+}
+.ProMove .images img:hover { 
+    transform: scale(1.05); 
+}
+
+/* Контакты */
+.contacts {
+    grid-column: 2 / 20;
+    grid-row: 7 / 8;
+    background: rgba(0,0,0,0.85);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+.contacts-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.contacts-icons a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 10px;
+    transition: 0.3s;
+}
+.contacts-icons a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #ffd700;
+}
+
+/* Footer */
+footer {
+    grid-column: 2 / 20;
+    grid-row: 8 / 9;
+    background: #000;
+    padding: 50px;
+    border-radius: 15px;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+footer .blocks { 
+    display: flex; 
+    justify-content: space-between; 
+}
+footer hr { 
+    margin: 30px 0; 
+    background: #ccc; 
+    border: none; 
+    height: 0.6px; 
+}
