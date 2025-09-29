@@ -3,7 +3,7 @@ body {
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: auto; 
     gap: 30px;
-    background: url('/img/background.jpg') center/cover no-repeat fixed;
+    background: url('img/background.jpg') center/cover no-repeat fixed;
     padding: 20px;
     font-family: "Zalando Sans", sans-serif;
     color: #fff;
